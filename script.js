@@ -1,16 +1,32 @@
-///SIDEBAR//
-let sidebarItems = document.querySelectorAll(".sidebar-item");
-sidebarItems.forEach((item) =>{
-    item.addEventListener("click", ()=>{
-        let curr = document.querySelector(".side-curr");
-        curr.classList.remove("side-curr");
-        item.classList.add("side-curr");
-    });
-});
+//<<<--- HEADER --->>>
 
-//SITTER-QUIZ//
-let dropInBtn = document.querySelector("#dropIn-btn");
-dropInBtn.addEventListener("click", () =>{
-    let inputDrop = document.querySelector("#dropIn");
-    inputDrop.checked = true;
+//MoBiLe\\
+
+//Hamburger Animations
+//Help from: https://codepen.io/designcouch/pen/ExvwPY
+let menuSm = document.querySelector(".menu-sm");
+let menuOpen = false;
+menuSm.addEventListener("click", ()=>{
+    let top = document.querySelector(".menu-top");
+    let center = document.querySelector(".menu-center");
+    let bottom = document.querySelector(".menu-bottom");
+
+    if(!menuOpen){
+        top.classList.remove("menu-top-restore");
+        center.classList.remove("menu-center-restore");
+        bottom.classList.remove("menu-bottom-restore");
+        top.classList.add("menu-top-move");
+        center.classList.add("menu-center-move");
+        bottom.classList.add("menu-bottom-move");
+        menuOpen = true;
+    }
+    else{
+        top.classList.remove("menu-top-move");
+        center.classList.remove("menu-center-move");
+        bottom.classList.remove("menu-bottom-move");
+        top.classList.add("menu-top-restore");
+        center.classList.add("menu-center-restore");
+        bottom.classList.add("menu-bottom-restore");
+        menuOpen = false;
+    }
 });
