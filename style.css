@@ -52,11 +52,19 @@ main{
 .sidebar > ul{
     list-style: none;
 }
-.sidebar-item{
-    font-size: 30px;
+.sidebar > ul > li{
     margin-bottom: 17px;
 }
+.sidebar-item{
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--main-color);
+}
 .side-curr{
+    color: var(--select-color);
+}
+.sidebar-item:hover{
+    cursor: pointer;
     color: var(--select-color);
 }
 
@@ -72,6 +80,7 @@ main{
 section{
     padding: 15px;
     min-height: 80vh;
+    scroll-margin-top: 120px;
 }
 
 .section-head{
@@ -113,14 +122,26 @@ section{
     max-width: 200px;
     font-weight: 400;
 }
+.card-popout{
+    background-color: var(--main-color);
+    color: var(--main-bg);
+    writing-mode: vertical-rl;
+    height: 150px;
+    padding: 0 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    margin-left: 200px;
+    margin-top: 40px;
+}
 
 
-.sitter > h3{
+#sitter > h3{
     font-size: 30px;
     margin: 20px 10px;
 }
 
-.sitter > hr{
+#sitter > hr{
     border-top: 0.5px solid var(--main-color);
     margin: 10px 0;
 }
