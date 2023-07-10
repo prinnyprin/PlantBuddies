@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Istok+Web&display=swap');
+:root{
+    /* CSS HEX PALETTE*/
+    --pale-oyster: #9c9278;
+    --irish-coffee: #5e3521;
+    --mikado: #29260f;
+    --dallas: #73582b;
+    --calico: #dcb38c;
+    --finch: #656346;
+    --albescent-white: #f6e6d5;
+    --bison-hide: #c5b8a8;
+    --pine-glade: #c6cf97;
+
+    /*USED COLORS*/
+    --main-bg: #F6F2ED;
+    --main-color: #29260F;
+    --brand-color: #656346;
+    --select-color: #782D1D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: var(--main-bg);
+    color: var(--main-color);
+}
+
+header{
+    padding-top: 17.5px;
+    margin-left: 194px;
+}
+
+.brand{
+    font-family: 'Istok Web', sans-serif;
+    color: var(--brand-color);
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    gap: 39px;
+}
+
+.sidebar{
+    margin-left: 46px;
+}
+.sidebar > ul{
+    list-style: none;
+}
+.sidebar-item{
+    font-size: 30px;
+    margin-bottom: 17px;
+}
+.side-curr{
+    color: var(--select-color);
+}
+
+.content{
+    flex: 2;
+    border-top: 0.5px solid var(--main-color);
+    border-left: 0.5px solid var(--main-color);
+    padding: 20px;
+    min-height: 80vh;
+    margin-right: 60px;
+}
+
+section{
+    padding: 15px;
+    min-height: 80vh;
+}
+
+.section-head{
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 220px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+.card-image{
+    height: 250px;
+    width: 200px;
+    border: 0.5px solid var(--main-color);
+    border-radius: 5px;
+}
+.card-title{
+    font-weight: 400;
+    font-size: 22.5px;
+}
+.card-divider{
+    width: 100%;
+    border: none;
+    border-top: 0.5px solid var(--main-color);
+}
+.card-text{
+    font-size: 12.5px;
+    max-width: 200px;
+    font-weight: 400;
+}
+
+
+.sitter > h3{
+    font-size: 30px;
+    margin: 20px 10px;
+}
+
+.sitter > hr{
+    border-top: 0.5px solid var(--main-color);
+    margin: 10px 0;
+}
